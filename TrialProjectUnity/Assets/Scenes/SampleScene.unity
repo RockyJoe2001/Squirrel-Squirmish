@@ -1442,7 +1442,7 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  speed: 2.81
+  speed: 1
   jumpSpeed: 10
 --- !u!50 &2043686171
 Rigidbody2D:
@@ -1459,7 +1459,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 2
+  m_GravityScale: 4
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
