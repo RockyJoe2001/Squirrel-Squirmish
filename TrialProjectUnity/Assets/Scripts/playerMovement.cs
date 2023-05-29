@@ -4,7 +4,7 @@ using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody2D))]
 
-public class PlayerMovement : MonoBehaviour
+public class playerMovement : MonoBehaviour
 {
     //reference variable so we can use the rigidbody
     //set it to null default, whichs means we do not have the reference yet
