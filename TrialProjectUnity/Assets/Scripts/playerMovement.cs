@@ -2,50 +2,79 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerMovement : MonoBehaviour
+[RequireComponent(typeof(Rigidbody2D))]
+
+public class PlayerMovement : MonoBehaviour
 {
-    //refrence variable so we can use the ridgid body
-    //set it to null by defalt
-    private Rigidbody2D physicsbody = null;
+    //reference variable so we can use the rigidbody
+    //set it to null default, whichs means we do not have the reference yet
+
+    private Rigidbody2D physicsBody = null;
 
     private void Awake()
     {
-        physicsbody = GetComponent<Rigidbody2D>();
+        physicsBody = GetComponent<Rigidbody2D>();
     }
 
-    [RequireComponent(typeof(Rigidbody2D))]
-    public class PlayerMovement : MonoBehaviour
-    {
+    public Collider2D GroundSensor = null;
+    public LayerMask groundLayer = 0;
 
-    }
+    
 
     public void MoveLeft()
     {
-        //make a variable to hold velocity
-        //currnt velocity from phisics component
-        Vector2 newVelosity = physicsbody.velocity;
-        //updte our phisics components velocity
-        newVelosity.x = -1;
-        //update our phisiscs velosity to ne velocity
-    }
+        //make a variable to hold your velocity and get the 
+        //current velocity from the physics component
 
+        Vector2 newVelocity = physicsBody.velocity;
+        // set your velocityto move in the negative x left directions 
+        newVelocity.x = -speed;
+        // update our physics components velocityto be our newly changed value 
+        physicsBody.velocity = newVelocity;
+
+    }
     public void MoveRight()
     {
-        //make a variable to hold velocity
-        //currnt velocity from phisics component
-        Vector2 newVelosity = physicsbody.velocity;
-        //updte our phisics components velocity
-        newVelosity.x = 1;
-        //update our phisiscs velosity to ne velocity
+        //make a variable to hold your velocity and get the 
+        //current velocity from the physics component
+
+        Vector2 newVelocity = physicsBody.velocity;
+        // set your velocityto move in the negative x left directions 
+        newVelocity.x = speed;
+        // update our physics components velocityto be our newly changed value 
+        physicsBody.velocity = newVelocity;
+
     }
 
-    public void MoveUp()
+    public float speed = 500;
+
+    
+    public void Jump()
     {
-        //make a variable to hold velocity
-        //currnt velocity from phisics component
-        Vector2 newVelosity = physicsbody.velocity;
-        //updte our phisics components velocity
-        newVelosity.y = 1;
-        //update our phisiscs velosity to ne velocity
+        if (GroundSensor.IsTouchingLayers(groundLayer))
+        { 
+
+            Vector2 newVelocity = physicsBody.velocity;
+
+        newVelocity.y = jumpSpeed;
+
+        physicsBody.velocity = newVelocity;
+    }
+}
+
+    public float jumpSpeed = 10;
+
+  
+
+    // Start is called before the first frame update
+    void Start()
+    {
+        
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+        
     }
 }
