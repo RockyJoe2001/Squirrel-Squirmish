@@ -2138,7 +2138,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startingHealth: 3
-  targetScene: 
+  targetScene: DeathScreen
 --- !u!1001 &3069401552818831943
 PrefabInstance:
   m_ObjectHideFlags: 0
