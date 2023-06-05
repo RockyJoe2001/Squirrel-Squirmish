@@ -1419,6 +1419,7 @@ GameObject:
   - component: {fileID: 2043686172}
   - component: {fileID: 2043686171}
   - component: {fileID: 2043686170}
+  - component: {fileID: 2043686175}
   m_Layer: 3
   m_Name: Squirrel1
   m_TagString: Untagged
@@ -1558,3 +1559,15 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2043686175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2043686169}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7534bd09b1a7edc4ca91ed5d146aaeed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
