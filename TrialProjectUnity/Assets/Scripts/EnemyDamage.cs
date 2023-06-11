@@ -1,12 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
-public class Hazard : MonoBehaviour
+public class EnemyDamage : MonoBehaviour
 {
-    public int hazardDamage;
-    public string targetScene = "";
+    public int pistolDamage;
+    
     void OnCollisionEnter2D(Collision2D collisionData)
     {
         Collider2D collider = collisionData.collider;
@@ -15,7 +14,8 @@ public class Hazard : MonoBehaviour
 
         if (player != null)
         {
-            player.ChangeHealth(-hazardDamage);
+            player.ChangeHealth(-pistolDamage);
+            Destroy(gameObject);
 
 
 

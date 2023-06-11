@@ -219,6 +219,7 @@ GameObject:
   - component: {fileID: 309160805}
   - component: {fileID: 309160804}
   - component: {fileID: 309160803}
+  - component: {fileID: 309160806}
   m_Layer: 5
   m_Name: Level 2 image
   m_TagString: Untagged
@@ -243,8 +244,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 180.3, y: 45.8}
-  m_SizeDelta: {x: 69.99, y: 69.53}
+  m_AnchoredPosition: {x: 182.5, y: 46.124}
+  m_SizeDelta: {x: 176.98, y: 175.82}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &309160803
 MonoBehaviour:
@@ -289,7 +290,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 309160804}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 309160806}
+        m_TargetAssemblyTypeName: SceneChange, Assembly-CSharp
+        m_MethodName: ChangeToScene
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Level - 2
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &309160804
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -310,8 +323,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 21300000, guid: eda873fe7a4e84b47be03e7cafa5fbe9, type: 3}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -328,6 +341,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 309160801}
   m_CullTransparentMesh: 1
+--- !u!114 &309160806
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 309160801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07dbcc2f38de7cf4bb181a0a64704b5d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1239123620
 GameObject:
   m_ObjectHideFlags: 0
