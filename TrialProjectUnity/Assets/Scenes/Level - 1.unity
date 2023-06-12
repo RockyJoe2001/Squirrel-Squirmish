@@ -557,7 +557,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8fa069ac2b06b948b66d69ea5b08976, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startingHealth: 3
+  startingHealth: 15
   targetScene: VictoryScreen
 --- !u!114 &151018282
 MonoBehaviour:
