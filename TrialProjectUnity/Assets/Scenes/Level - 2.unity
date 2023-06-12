@@ -1459,7 +1459,7 @@ MonoBehaviour:
   projectilePrefab: {fileID: 2010345525681941703, guid: 68392aefc0fce9d46acd7542cdf3f82e, type: 3}
   projectileVelocity: {x: -10, y: 0}
   timer: 0
-  waitingTime: 0.8
+  waitingTime: 0.7
 --- !u!114 &900989160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1475,12 +1475,12 @@ MonoBehaviour:
   forceStrength: 5
   patrolPaths:
   - {x: 7.01, y: -3.1}
-  - {x: 6, y: -0.4}
+  - {x: 6, y: -0.2}
   - {x: 5, y: -3.1}
   - {x: 4, y: -3.1}
-  - {x: 5, y: -3.1}
+  - {x: 5, y: -0.2}
   - {x: 6, y: -3.1}
-  - {x: 6.5, y: -0.4}
+  - {x: 6.5, y: -0.2}
   - {x: 7.01, y: -3.1}
   stopDistance: 0.2
 --- !u!114 &900989161
