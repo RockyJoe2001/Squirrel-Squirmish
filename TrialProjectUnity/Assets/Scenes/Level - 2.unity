@@ -408,8 +408,8 @@ GameObject:
   - component: {fileID: 151018277}
   - component: {fileID: 151018280}
   - component: {fileID: 151018281}
-  - component: {fileID: 151018282}
   - component: {fileID: 151018283}
+  - component: {fileID: 151018284}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: Enemy
@@ -504,7 +504,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 7
+  m_Constraints: 4
 --- !u!61 &151018278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -559,23 +559,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startingHealth: 3
   targetScene: VictoryScreen - Level2
---- !u!114 &151018282
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 151018274}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6403047fc6508d84a9d5be8ae9b8f5e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  forceStrength: 5
-  patrolPaths:
-  - {x: 7.04, y: -2.86}
-  - {x: 6.5, y: -1}
-  stopDistance: 0.1
 --- !u!114 &151018283
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -592,6 +575,29 @@ MonoBehaviour:
   projectileVelocity: {x: -10, y: 0}
   timer: 0
   waitingTime: 0.8
+--- !u!114 &151018284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 151018274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6403047fc6508d84a9d5be8ae9b8f5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  forceStrength: 5
+  patrolPaths:
+  - {x: 7.01, y: -2.86}
+  - {x: 6, y: -0.2}
+  - {x: 5, y: -2.86}
+  - {x: 4, y: -0.2}
+  - {x: 5, y: -2.86}
+  - {x: 6, y: -2.86}
+  - {x: 6.5, y: -0.2}
+  - {x: 7.01, y: -2.86}
+  stopDistance: 0.2
 --- !u!1 &224406488
 GameObject:
   m_ObjectHideFlags: 0
