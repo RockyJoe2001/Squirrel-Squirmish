@@ -31,7 +31,7 @@ public class HealthDisplay : MonoBehaviour
             //each icon is worth +1 than the last
             currentIconHealth = currentIconHealth + 1;
 
-            //if the players current health is equalor greater
+            //if the players current health is equal or greater
             //than the health value for this icon
             if (player.GetHealth() >= currentIconHealth)
             {
