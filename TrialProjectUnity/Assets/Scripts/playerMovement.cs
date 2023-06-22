@@ -10,14 +10,17 @@ public class playerMovement : MonoBehaviour
     //set it to null default, whichs means we do not have the reference yet
 
     private Rigidbody2D physicsBody = null;
+    public float jumpSpeed = 10;
+    public float speed = 500;
+    public Collider2D GroundSensor = null;
+    public LayerMask groundLayer = 0;
 
     private void Awake()
     {
         physicsBody = GetComponent<Rigidbody2D>();
     }
 
-    public Collider2D GroundSensor = null;
-    public LayerMask groundLayer = 0;
+    
 
     
 
@@ -46,23 +49,25 @@ public class playerMovement : MonoBehaviour
 
     }
 
-    public float speed = 500;
+  
 
     
     public void Jump()
-    {
+    {//made a variable to hold gravity
+     // changes gravity from the velocity component
+
         if (GroundSensor.IsTouchingLayers(groundLayer))
         { 
 
             Vector2 newVelocity = physicsBody.velocity;
+            // added jump speed to velocity
+            newVelocity.y = jumpSpeed;
 
-        newVelocity.y = jumpSpeed;
-
-        physicsBody.velocity = newVelocity;
+            physicsBody.velocity = newVelocity;
+        }
     }
-}
 
-    public float jumpSpeed = 10;
+    
 
   
 
