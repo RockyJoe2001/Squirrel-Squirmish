@@ -2556,12 +2556,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce1262d83376d2d479ff74dbb647802b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  jumpSpeed: 14
+  speed: 3
   GroundSensor: {fileID: 2043686177}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  speed: 3
-  jumpSpeed: 14
 --- !u!50 &2043686171
 Rigidbody2D:
   serializedVersion: 4
